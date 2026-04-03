@@ -1,20 +1,47 @@
 body {
     background-color: lightblue;
-}
-h1 {
-    color: red;
+    font-family: Arial;
 }
 
-h2 {
-    color: red;
+.productos {
+    display: flex;
+    flex-direction: column;
 }
-h3 {
-    color: red;
+
+.card-producto {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
 }
 
 img {
-    width: 400px;
-    height: 300px;
-    margin: auto;
-    display: block;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .productos {
+        flex-direction: row;
+    }
+
+    .card-producto {
+        width: 45%;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    .card-producto {
+        width: 30%;
+    }
 }
