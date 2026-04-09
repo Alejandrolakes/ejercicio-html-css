@@ -56,9 +56,9 @@ img {
     border-radius: 50%;  /* Lo hace completamente redondo*/
     width: 55px;  /* Tamaño del boton */
     height: 55px;
-    cursor: pointer;
+    cursor: pointer;  /* Cambia el cursos a mano cuando pasa por encima */
     font-size: 24px; /* mas grande */
-    display: flex;
+    display: flex;  /*  Activa Flexbox*/
     justify-content: center;
     align-items: center;
 }
